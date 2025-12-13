@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/assets/images/LinkedIn_icon.svg.webp"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>CyberDude Networks Private Limited</title>
+  </head>
+  <body class="bg-gray-100 cursor-pointer">
+    <!--Header-->
+    <header class="bg-white">
+      <nav class="flex items-center w-full h-16 justify-around">
+        <div class="flex items-center gap-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            data-supported-dps="24x24"
+            fill="currentColor"
+            class="text-blue-700 w-10 h-10 ml-3"
+            width="24"
+            height="24"
+            focusable="false"
+          >
+            <path
+              d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"
+            ></path>
+          </svg>
+          <div
+            class="hidden lg:flex border border-gray-300 p-3 w-72 rounded-2xl h-8 items-center gap-3"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="text"
+              placeholder="Search"
+              class="border-none outline-none text-black placeholder-gray-800"
+            />
+          </div>
+          <div class="lg:hidden flex">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-5 text-xs text-center text-gray-500">
+          <div class="flex flex-col items-center gap-1 hover:text-black">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              data-supported-dps="24x24"
+              fill="currentColor"
+              class="mercado-match"
+              width="24"
+              height="24"
+              focusable="false"
+            >
+              <path
+                d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7z"
+              ></path>
+            </svg>
+            <p class="hidden lg:block">Home</p>
+          </div>
+          <div class="flex flex-col items-center gap-1 hover:text-black">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              data-supported-dps="24x24"
+              fill="currentColor"
+              class="mercado-match"
+              width="24"
+              height="24"
+              focusable="false"
+            >
+              <path
+                d="M12 16v6H3v-6a3 3 0 013-3h3a3 3 0 013 3zm5.5-3A3.5 3.5 0 1014 9.5a3.5 3.5 0 003.5 3.5zm1 2h-2a2.5 2.5 0 00-2.5 2.5V22h7v-4.5a2.5 2.5 0 00-2.5-2.5zM7.5 2A4.5 4.5 0 1012 6.5 4.49 4.49 0 007.5 2z"
+              ></path>
+            </svg>
+            <p class="hidden lg:block">My Network</p>
+          </div>
+          <div class="flex flex-col items-center gap-1 hover:text-black">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              data-supported-dps="24x24"
+              fill="currentColor"
+              class="mercado-match"
+              width="24"
+              height="24"
+              focusable="false"
+            >
+              <path
+                d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z"
+              ></path>
+            </svg>
+            <p class="hidden lg:block">Jobs</p>
+          </div>
+          <div class="flex flex-col items-center gap-1 hover:text-black">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              data-supported-dps="24x24"
+              fill="currentColor"
+              class="mercado-match"
+              width="24"
+              height="24"
+              focusable="false"
+            >
+              <path
+                d="M16 4H8a7 7 0 000 14h4v4l8.16-5.39A6.78 6.78 0 0023 11a7 7 0 00-7-7zm-8 8.25A1.25 1.25 0 119.25 11 1.25 1.25 0 018 12.25zm4 0A1.25 1.25 0 1113.25 11 1.25 1.25 0 0112 12.25zm4 0A1.25 1.25 0 1117.25 11 1.25 1.25 0 0116 12.25z"
+              ></path>
+            </svg>
+            <p class="hidden lg:block">Messaging</p>
+          </div>
+          <div class="flex flex-col items-center gap-1 hover:text-black">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              data-supported-dps="24x24"
+              fill="currentColor"
+              class="mercado-match"
+              width="24"
+              height="24"
+              focusable="false"
+            >
+              <path
+                d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z"
+              ></path>
+            </svg>
+            <p class="hidden lg:block">Notifications</p>
+          </div>
+          <div class="flex flex-col items-center gap-1 pl-3 hover:text-black">
+            <img
+              width="24"
+              src="https://media.licdn.com/dms/image/v2/D4D35AQFO0-lSiLT7Yg/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1646374808902?e=1766138400&amp;v=beta&amp;t=PBttxMfBjb4q0YEEsSoFDeANMZUmwVsSa4hicuHUBOs"
+              height="24"
+              alt="Pavithra R"
+              id="ember24"
+              class="global-nav__me-photo evi-image ember-view rounded-full"
+            />
+            <p class="hidden lg:block">Me</p>
+          </div>
+          <div class="border-r border-gray-200 h-16">
+            <p class="hidden">pavithra</p>
+          </div>
+          <div class="flex flex-col items-center gap-1 hover:text-black">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              data-supported-dps="24x24"
+              fill="currentColor"
+              class="mercado-match"
+              width="24"
+              height="24"
+              focusable="false"
+            >
+              <path
+                d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z"
+              ></path>
+            </svg>
+            <p class="hidden lg:block">For Business</p>
+          </div>
+          <div class="flex flex-col items-center gap-1 hover:text-black">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              data-supported-dps="24x24"
+              fill="currentColor"
+              width="24"
+              height="24"
+              focusable="false"
+            >
+              <circle
+                cx="12"
+                cy="4"
+                r="2"
+                style="isolation: isolate"
+                opacity=".75"
+              ></circle>
+              <path
+                d="M21 10H3a1 1 0 00-1 1v10a1 1 0 001 1h18a1 1 0 001-1V11a1 1 0 00-1-1zm-5 9H8v-2h8v2zm2-4H6v-2h12v2z"
+              ></path>
+              <g opacity=".6">
+                <path
+                  d="M9.57 5.75l-2.41 4.83 1.68.84 2.28-4.57a3 3 0 01-1.55-1.1zM14.43 5.75a3 3 0 01-1.55 1.1l2.28 4.57 1.68-.84z"
+                  style="isolation: isolate"
+                  opacity=".55"
+                ></path>
+              </g>
+            </svg>
+            <p class="hidden lg:block">Hire with Ai</p>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main container -->
+    <div class="w-full mt-5">
+      <div class="flex justify-around gap-6 md:flex-row">
+        <div
+          class="bg-white border-2 border-gray-200 rounded w-3/4 mx-10 relative"
+        >
+          <div class="">
+            <img
+              src="/assets/images/cyberdude_networks_cover.jpg"
+              alt=""
+              class="w-full rounded"
+            />
+          </div>
+          <div class="absolute top-24 left-10">
+            <img
+              src="/assets/images/cyberdude_networks_logo.jpg"
+              alt=""
+              class="h-30 border-4 border-white"
+            />
+          </div>
+
+          <div
+            class="absolute right-5 top-40 h-10 w-10 hover:bg-gray-200 rounded-full text-center"
+          >
+            <i class="fa-solid fa-bell text-gray-800 text-xl mt-2"></i>
+          </div>
+          <div class="mt-20">
+            <p class="pl-5 font-medium text-gray-800 text-2xl">
+              CyberDude Networks Private Limited
+            </p>
+            <p class="pl-5 text-gray-700 text-lg mt-2">
+              CyberDude Networks Pvt. Ltd., is a Tech-Startup focused at
+              Internet of Things (IoT), Artificial Intellegence (AI).
+            </p>
+            <p class="pl-5 text-gray-500 text-sm mt-2">
+              Technology, Information and Media Chennai, Tamil Nadu 768
+              followers 2-10 employees
+            </p>
+          </div>
+          <div class="flex mt-5 pl-5 gap-3 items-center">
+            <img
+              width="24"
+              src="https://media.licdn.com/dms/image/v2/D5603AQFhnSBqOTl3uQ/profile-displayphoto-scale_100_100/B56ZlX8dokHAAc-/0/1758117096200?e=1767225600&amp;v=beta&amp;t=PNRVHKP-TU_ltCeKoBa396SbAmeEEU7aoZ_7Wl48YTU"
+              loading="lazy"
+              height="24"
+              alt="Gokulakrishnan A"
+              id="ember36"
+              class="h-10 w-10 rounded-full"
+            />
+            <a
+              href="#"
+              class="hover:text-blue-600 hover:underline text-gray-500 text-sm"
+              >Gokulakrishnan & 6 other connections work here</a
+            >
+          </div>
+          <div class="flex gap-3 mt-4 pl-5 cursor-pointer">
+            <!-- Message button -->
+            <button
+              class="flex items-center gap-2 bg-sky-700 text-white px-4 py-1.5 rounded-full font-medium hover:bg-sky-900 cursor-pointer"
+            >
+              <i class="fa-solid fa-paper-plane text-sm"></i>
+              Message
+            </button>
+
+            <!-- Following button -->
+            <button
+              class="flex items-center gap-2 border border-blue-600 text-blue-600 px-4 py-1.5 rounded-full font-medium hover:bg-blue-50 cursor-pointer hover:border-2 hover:border-sky-800"
+            >
+              <i class="fa-solid fa-check text-sm"></i>
+              Following
+            </button>
+
+            <!-- More (overflow) -->
+            <button
+              class="h-9 w-9 flex items-center justify-center rounded-full border hover:bg-gray-100 cursor-pointer"
+            >
+              <i class="fa-solid fa-ellipsis text-gray-600"></i>
+            </button>
+          </div>
+
+          <div
+            class="mt-5 border-t border-gray-200 pl-7 flex items-center h-20"
+          >
+            <ul class="flex gap-10 mt-4">
+              <li
+                class="text-green-800 font-bold pb-2 border-b-2 border-green-700"
+              >
+                Home
+              </li>
+              <li class="font-medium text-gray-500 hover:text-gray-800">
+                About
+              </li>
+              <li class="font-medium text-gray-500 hover:text-gray-800">
+                Posts
+              </li>
+              <li class="font-medium text-gray-500 hover:text-gray-800">
+                Jobs
+              </li>
+              <li class="font-medium text-gray-500 hover:text-gray-800">
+                People
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-1/4 mr-8">
+          <div class="flex flex-col gap-3">
+            <div class="border border-gray-300 bg-white rounded-lg relative">
+              <img
+                alt=""
+                aria-hidden="true"
+                class="w-full"
+                data-testid="wwu-aggregation-container__background-image"
+                src="https://media.licdn.com/dms/image/v2/D561BAQH0N1tdeoOSKA/company-background_400/B56ZqX56NlJQAY-/0/1763485131958/google_cover?e=1766210400&amp;v=beta&amp;t=MBH82tfSbTKKLDSkLt3fk-uXdMkb5wlYaXcFjdofA9A"
+              />
+              <img
+                alt="Pavithra"
+                class="absolute left-[122px] top-[20px] size-[56px] rounded-full border-2 border-white"
+                data-testid="wwu-aggregation-container__member-image"
+                src="https://media.licdn.com/dms/image/v2/C4D03AQEWV0NqtMpKbw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1645207458880?e=1767225600&amp;v=beta&amp;t=5mjD1yW4JhX3SN5Nekdp-FQPBDiwBPhmnT1Z5GR8sUs"
+              />
+              <p class="text-xs pt-10 px-5">
+                Pavithra, explore jobs at
+                <span class="font-bold text-gray-700">Google</span> that match
+                your skills
+              </p>
+              <div class="p-3 flex">
+                <img
+                  alt="Google"
+                  class="me-[8px] size-[48px] rounded-[4px]"
+                  data-testid="wwu-aggregation-container__company-logo"
+                  src="https://media.licdn.com/dms/image/v2/C4D0BAQHiNSL4Or29cg/company-logo_100_100/company-logo_100_100/0/1631311446380?e=1767225600&amp;v=beta&amp;t=ilY-scPbfh9ffiyRYNfsgKcEdYABnpCl-0pc1CsWmaM"
+                />
+                <div>
+                  <p class="text-gray-800">Google</p>
+                  <p class="text-gray-400 text-sm">Software Development</p>
+                </div>
+              </div>
+              <button
+                class="flex items-center gap-2 bg-white text-sky-700 px-4 py-1.5 w-60 rounded-full font-medium hover:bg-sky-300 cursor-pointer border border-blue-500 mx-auto mb-3"
+              >
+                See jobs
+              </button>
+            </div>
+            <div class="h-1/2 border border-gray-200 bg-white rounded-lg p-3">
+              <p class="text-black font-medium text-lg">Affiliated pages</p>
+              <div class="flex mt-3 justify-between items-start gap-3">
+                <img
+                  width="40"
+                  src="https://media.licdn.com/dms/image/v2/D560BAQFY6iuNcWkFoQ/company-logo_100_100/company-logo_100_100/0/1690354170365?e=1767225600&amp;v=beta&amp;t=b6m3DuxXVub1v6FlZueHq5TcRlVjAJs2OUDFi9Wb7Xo"
+                  loading="lazy"
+                  height="40"
+                  alt="CyberDude Group of Companies page logo"
+                  id="ember771"
+                  class="ivm-view-attr__img--centered EntityPhoto-square-3 evi-image lazy-image ember-view"
+                />
+                <div>
+                  <p class="text-gray-700 font-medium hover:underline">
+                    CyberDude Group of Companies
+                  </p>
+                  <p class="text-gray-700 text-xs">
+                    Technology, Information and Internet
+                  </p>
+                  <p class="text-gray-800 text-xs mt-2">Showcase Page</p>
+                  <button
+                    class="flex items-center gap-2 bg-white text-sky-700 px-4 py-1.5 w-30 rounded-full font-medium hover:bg-sky-300 cursor-pointer border border-blue-500 mb-3 mt-3"
+                  >
+                    + Follow
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-around gap-6 md:flex-row mt-3">
+        <div
+          class=" w-3/4 mx-10 p-3"
+        >
+        <div class="bg-white border-2 border-gray-200 rounded p-3">
+          <p class="text-lg font-medium">Overview</p>
+
+        <p class="mt-5 pl-3 text-gray-700 mb-5">
+          Cyberdude Networks - A Web Development and Designing Company is Chennai based Start-up with Highly Talented Technical Geeks. The main focus of our team is to satisfy the customer requirements in all forms. Being the startup we are new to business venture, but not to the product development si ... see more
+        </p>
+        <div class="border-t border-gray-300 flex items-center justify-center mt-5">
+            <p class="p-3 text-gray-700 text-lg">See all details -></p>
+        </div>
+        </div>
+
+        <!--jobopening-->
+
+        <div class="bg-white border-2 border-gray-200 rounded p-3">
+          <p class="text-lg font-medium">Recent job Openings</p>
+
+        <div class="flex justify-between mt-5 p-3">
+          <div class="flex gap-7">
+            <img width="48" src="https://media.licdn.com/dms/image/v2/D560BAQFI_zxYO6fHfQ/company-logo_100_100/company-logo_100_100/0/1690363278468/cyberdude_networks_logo?e=1767225600&amp;v=beta&amp;t=BkNuiZZ5Fw1uONtrdcl0J6N_78804U3qEqFXH5qr-5A" loading="lazy" height="48" alt="HR Intern page logo" id="ember542" class="ivm-view-attr__img--centered EntityPhoto-square-3   evi-image lazy-image ember-view">
+            <div>
+              <p class="text-black font-medium">HR Intern</p>
+            <p class="text-gray-600 text-xs">Greater Chennai Area</p>
+            </div>
+             <div class="flex gap-2">
+            <img width="48" src="https://media.licdn.com/dms/image/v2/D560BAQFI_zxYO6fHfQ/company-logo_100_100/company-logo_100_100/0/1690363278468/cyberdude_networks_logo?e=1767225600&amp;v=beta&amp;t=BkNuiZZ5Fw1uONtrdcl0J6N_78804U3qEqFXH5qr-5A" loading="lazy" height="48" alt="HR Intern page logo" id="ember542" class="ivm-view-attr__img--centered EntityPhoto-square-3   evi-image lazy-image ember-view">
+            <div>
+              <p class="text-black font-medium">HR Intern</p>
+            <p class="text-gray-600 text-xs">Greater Chennai Area</p>
+            </div>
+             
+            
+            
+          </div>
+            
+            
+          </div>
+          
+
+        </div>
+        <div
+  class="border-t border-gray-300 flex items-center justify-center mt-5 p-3 cursor-pointer hover:bg-gray-400"
+>
+  <p class="text-gray-700 text-lg">
+    Show all Jobs →
+  </p>
+</div>
+
+        </div>
+        <!--people-->
+
+        <div class="bg-white border-2 border-gray-200 rounded p-3">
+          <p class="text-lg font-medium">People highlights</p>
+           <div class="flex gap-5">
+             <div>
+              <p class=" text-gray-500">7 Connections</p>
+              <div class="p-2 flex gap-2">
+                <img src="https://media.licdn.com/dms/image/v2/C4D03AQEWV0NqtMpKbw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1645207458880?e=1767225600&amp;v=beta&amp;t=Vkm96dSnTLA5-EM8-LW-fWRJPK6k2osDxzIu4LRyO4Y" loading="lazy" alt="Pavithra R" id="ember555" class="evi-image lazy-image ember-view rounded-full h-10 w-10">
+                <div>
+                  <p>Pavithra R . <span class="text-gray-600">you</span></p>
+                  <p class="text-gray-600">React developer</p>
+
+                  
+                </div>
+
+                
+                
+              </div>
+
+              
+             </div>
+             <div>
+              
+              
+
+              
+             </div>
+           </div>
+        
+        <div class="border-t border-gray-300 flex items-center justify-center mt-5">
+            <p class="p-3 text-gray-700 text-lg">See all details -></p>
+        </div>
+        </div>
+      </div>
+        <div class="w-1/4 mr-8">
+          <div class="border border-gray-300 bg-white rounded-lg p-3">
+             <p class="p-3 text-gray-700 text-lg font-bold">Pages people also viewed</p>
+             <div class="flex gap-2 items-start justify-center">
+              <img width="48" src="https://media.licdn.com/dms/image/v2/C560BAQFJHoq9O7eAFg/company-logo_100_100/company-logo_100_100/0/1672983006904?e=1767225600&amp;v=beta&amp;t=fZOiNLZTDs-YCGUJ72s9IVZkc6CyAXcv0i_4ndVdU7o" loading="lazy" height="48" alt="JVL code page logo" id="ember650" class="ivm-view-attr__img--centered EntityPhoto-square-3   evi-image lazy-image ember-view">
+              <div>
+                <p class=" text-gray-700  font-bold">JVL code</p>
+                <p class="text-xs text-gray-700 mt-2 hover:underline">Technology, Information and Internet</p>
+                <p class="text-xs text-gray-700 mt-2 hover:underline">1,705 followers</p>
+                <div class="flex gap-2 mt-5 items-center">
+                  <img width="32" src="https://media.licdn.com/dms/image/v2/C4E03AQH6e5fteIyRkQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1595000845740?e=1767225600&amp;v=beta&amp;t=uqn-l7KXpMx1OjrkgTM6_HMHot3QJ_Mhv2727Fu14Rk" loading="lazy" height="32" alt="deva p" id="ember656" class="ivm-view-attr__img--centered EntityPhoto-circle-1   evi-image lazy-image ember-view rounded-full">
+                  <p class="text-xs text-gray-700 font-medium hover:text-blue-500">deva follows this page</p>
+                </div>
+                <button
+                    class="flex items-center gap-2 bg-white text-gray-700 px-4 py-1.5 w-30 rounded-full font-medium hover:bg-gray-800 hover:border-2 hover:border-gray-950 cursor-pointer border border-gray-500 mb-3 mt-3"
+                  >
+                    + Follow
+                  </button>
+              </div>
+             </div>
+
+             <div class="border-t border-gray-300 p-3">
+                 <div class="flex gap-2 items-start justify-center">
+              <img width="48" src="https://media.licdn.com/dms/image/v2/D4D0BAQHTkD2g3MERyQ/company-logo_100_100/company-logo_100_100/0/1699601801789/gateway_software_solutions_logo?e=1767225600&amp;v=beta&amp;t=iPCXvPV7EZ64J3ItC6GTNM1Zy7ja89BMem9t5aDJSw0" loading="lazy" height="48" alt="Gateway Software SolutionS page logo" id="ember660" class="ivm-view-attr__img--centered EntityPhoto-square-3   evi-image lazy-image ember-view">
+              <div>
+                <p class=" text-gray-700 font-medium text-lg">Gateway Software Solutions</p>
+                <p class="text-xs text-gray-700 mt-2 hover:underline">IT Services and IT Consulting</p>
+                <p class="text-xs text-gray-700 mt-2 hover:underline">2,285 followers</p>
+                <button
+                    class="flex items-center gap-2 bg-white text-gray-700 px-4 py-1.5 w-30 rounded-full font-medium hover:bg-gray-800 hover:border-2 hover:border-gray-950 cursor-pointer border border-gray-500 mb-3 mt-3"
+                  >
+                    + Follow
+                  </button>
+
+                 
+             </div>
+          </div>
+          <div class="border-t border-gray-300 p-3">
+                 <div class="flex gap-2 items-start justify-center">
+              <img width="48" src="https://media.licdn.com/dms/image/v2/C510BAQGyaG4JR_eqmw/company-logo_100_100/company-logo_100_100/0/1630566458777?e=1767225600&amp;v=beta&amp;t=MvH9L1J6MYAWAwYIcOazqk6ForveuKjI_DPzZ_8FidI" loading="lazy" height="48" alt="Vaeto Technologies Private Limited page logo" id="ember668" class="ivm-view-attr__img--centered EntityPhoto-square-3   evi-image lazy-image ember-view">
+              <div>
+                <p class=" text-gray-700 font-medium">Vaeto Technologies Private Limited</p>
+                <p class="text-xs text-gray-700 mt-2 hover:underline">Computer and Network Security</p>
+                <p class="text-xs text-gray-700 mt-2 hover:underline">1,814 followers</p>
+                <button
+                    class="flex items-center gap-2 bg-white text-gray-700 px-4 py-1.5 w-30 rounded-full font-medium hover:bg-gray-800 hover:border-2 hover:border-gray-950 cursor-pointer border border-gray-500 mb-3 mt-3"
+                  >
+                    + Follow
+                  </button>
+        </div>
+      </div>
+          <div class="mt-2 border-t border-gray-300 w-full">
+            <div class="flex gap-2 items-center justify-center mt-3 hover:bg-gray-400">
+              <i class="fa-solid fa-arrow-right"></i>
+              <p class="text-lg text-gray-700 hover:text-gray-900">See all</p>
+            </div>
+              
+          </div>
+      </div>
+
+      <!--next section-->
+
+      
+    </div>
+
+    <!-- Page background -->
+
+    <!--Footer-->
+
+
+    
+  </body>
+</html>
